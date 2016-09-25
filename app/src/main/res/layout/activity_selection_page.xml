@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_selection_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="kiwikids.bomb.selectionPage"
+    android:background="#0099cc">
+
+
+    <TextView
+        android:text="Player :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/movies"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:id="@+id/playerVar"
+        android:textColor="@android:color/background_light"
+        android:fontFamily="serif"
+        android:textSize="36sp"
+        android:textStyle="normal|bold"/>
+
+    <Button
+        android:text="Movies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/movies"
+        android:onClick="movieActivity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        style="@style/Widget.AppCompat.Button.Colored"
+        tools:style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:fontFamily="serif"
+        android:textSize="45sp"
+        android:textStyle="normal|bold"
+        android:visibility="visible"
+        android:layout_above="@+id/act"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Actors/Actresses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/act"
+        android:layout_marginBottom="66dp"
+        android:onClick="actActivity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        style="@style/Widget.AppCompat.Button.Colored"
+        tools:style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:fontFamily="serif"
+        android:textSize="45sp"
+        android:textStyle="normal|bold"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

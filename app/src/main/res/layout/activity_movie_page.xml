@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_movie_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#0099cc"
+    tools:context="kiwikids.bomb.moviePage">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:inputType="text|textPersonName"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_gravity="center"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:textColorLink="@android:color/background_light"
+        tools:background="@android:color/background_light"/>
+
+    <Button
+        android:id="@+id/submitButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="Submit"
+        android:elevation="8dp"
+        android:visibility="visible"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:fontFamily="serif"
+        android:textSize="45sp"
+        android:textStyle="normal|bold"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:onClick="trueOrFalse"/>
+
+    <TextView
+        android:text="Enter Title of Movie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:fontFamily="serif"
+        android:textSize="36sp"
+        android:textStyle="normal|bold"
+        android:gravity="center"
+        android:layout_marginTop="77dp"
+        android:textColor="@android:color/background_light"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
